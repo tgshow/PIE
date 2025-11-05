@@ -11,7 +11,6 @@ export const style = StyleSheet.create({
     boxTop:{
         height: Dimensions.get('window').height/3,
         width:"100%",
-        //backgroundColor: 'red',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -81,5 +80,53 @@ export const style = StyleSheet.create({
         color: '#FFFF',
         fontWeight: 'bold'
     },
+    card: {
+    padding: 20,
+    margin: 16,
+    backgroundColor: "#f9f9f9",
+    borderRadius: 12,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+    elevation: 3,
+    
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: "700",
+    textAlign: "center",
+    marginBottom: 10,
+  },
+  label: {
+    marginTop: 10,
+    marginBottom: 6,
+    fontWeight: "600",
+  },
+  input2: {
+    backgroundColor: "#fff",
+    padding: 10,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: "#e6e6e6",
+  },
+  button2: {
+    backgroundColor: "#eee",
+    padding: 10,
+    borderRadius: 8,
+    marginTop: 6,
+  },
+  preview: {
+    width: "100%",
+    height: 200,
+    marginTop: 10,
+    borderRadius: 8,
+  },
+  submit: {
+    backgroundColor: "#00C853",
+    padding: 14,
+    borderRadius: 10,
+    alignItems: "center",
+    marginTop: 16,
+  },
     
 });

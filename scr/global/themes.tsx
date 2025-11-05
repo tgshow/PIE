@@ -1,6 +1,6 @@
 export const themas = {
     colors:{
-        primary:'#878af6',
+        primary:'#00C853',
         secondary: '#ffffff',
         lightGray: '#d7d8d7',
         gray: 'gray',

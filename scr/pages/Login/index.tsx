@@ -9,10 +9,11 @@ import {View,
         ActivityIndicator
 }from "react-native";
 
-import { style } from "./styles"
-import Logo from "../../assets/logo.png"
+import RegistroProblema from "../Login/RegistroProblema"
 
-import {MaterialIcons} from '@expo/vector-icons'; 
+import { style } from "./styles"
+import Logo2 from "../../assets/newlogo.png"
+import {MaterialIcons, Octicons} from '@expo/vector-icons'; 
 import { themas } from "../../global/themes";
 import { useState } from "react";
 import { Input } from "../../components/input";
@@ -47,20 +48,42 @@ export default function Login() {
 
   return (
     <View style={style.container}>
+      <RegistroProblema/>
+    {
+      /*
       <View style={style.boxTop}>
-       <Image
+        <Image source={Logo2}
+        style={style.logo}
+        resizeMode="contain"
+        />
+       {/* <Image
         source={Logo}
         style={style.logo}
         resizeMode="contain"
-       />
+       /> 
        <Text style={style.text}>Bem vindo!</Text>
        
       </View>
 
       <View style={style.boxMid}>
-         <Text style={style.titleInput}>ENDEREÇO E-MAIL</Text> 
+        <Input
+        value={email}
+        onChangeText={setEmail}
+        title="ENDEREÇO E-MAIL"
+        IconRight={MaterialIcons}
+        IconRightName="email"
+        />
+        <Input
+        value={password}
+        onChangeText={setPassword}
+        title="SENHA"
+        IconRight={Octicons}
+        IconRightName="eye-closed"
+        />
+        
+          <Text style={style.titleInput}>ENDEREÇO E-MAIL</Text> 
 
-         <Input/>
+         
 
          <View style={style.BoxInput}>
           <TextInput
@@ -87,7 +110,7 @@ export default function Login() {
           size = {20}
           color={themas.colors.gray}
           />
-         </View> 
+         </View>  
       </View>
 
       <View style={style.boxBottom}>
@@ -101,6 +124,8 @@ export default function Login() {
          </TouchableOpacity>
       </View>
       <Text style={{color:themas.colors.gray}}>Não possui conta? <Text style={{color:themas.colors.primary}}>Crie agora!</Text></Text> 
+      */
+    }  
     </View>
   );
 }
